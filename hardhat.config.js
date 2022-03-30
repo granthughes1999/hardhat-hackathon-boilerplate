@@ -7,6 +7,13 @@ require("./tasks/faucet");
 
 // If you are using MetaMask, be sure to change the chainId to 1337
 module.exports = {
+
+  networks: {
+    'truffle-dashboard': {
+      url: "http://localhost:24012/rpc"
+    }
+  },
+
   solidity: "0.7.3",
   networks: {
     hardhat: {
